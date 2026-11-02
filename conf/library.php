@@ -13,7 +13,9 @@ function create_alert($type,$pesan,$header=null){
 
 function show_alert(){
     if(isset($_SESSION['adm-type'])){
+        $type = $_SESSION['adm-type'];
         unset($_SESSION['adm-type']);
+
         $message = $_SESSION['adm-message'];
         unset($_SESSION['adm-message']);
 
@@ -21,6 +23,5 @@ function show_alert(){
         <div class='alert alert-$type'>
             <strong>$type</strong>
             <br> $message </div>";
-
     }
 }

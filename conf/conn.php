@@ -12,6 +12,6 @@ PDO('mysql:host=localhost;dbname='.$db.';charset=utf8',
     $user,
     $pass);
 
-require_once("conf/library.php");
-require_once(" conf/ClassLogin.php");
+require_once("library.php");
+require_once("ClassLogin.php");
 $login =new Login();
